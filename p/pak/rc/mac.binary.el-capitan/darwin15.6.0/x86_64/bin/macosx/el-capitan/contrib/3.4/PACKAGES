@@ -1,0 +1,41 @@
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 3.4), R (<= 3.4.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: d76915d60c9cd6b4c1b7513c58157adf
+Sha256: ec26a094f9616dbf2e0522eb9befc99bf9d50894e5087cd7a680b47b5b0fb4ff
+NeedsCompilation: no
+Built: R 3.4.4; x86_64-apple-darwin15.6.0; 2021-12-21 06:08:27 UTC; unix
+Packaged: 2021-12-21 06:08:26 UTC; runner
+File: pak_0.2.0.9000_R-3-4_x86_64-darwin15.6.0.tgz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:ec26a094f9616dbf2e0522eb9befc99bf9d50894e5087cd7a680b47b5b0fb4ff
+Path: ../../../../../../../../darwin15.6.0/x86_64
+
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 3.5), R (<= 3.5.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: 06539ca015ef8f00c3c180fad92b8f4f
+Sha256: ee72340b20c7b7a35372e4d5bae6da5ddde35e4cb432fcad691fbacfd573c9d6
+NeedsCompilation: no
+Built: R 3.5.3; x86_64-apple-darwin15.6.0; 2021-12-21 06:15:10 UTC; unix
+Packaged: 2021-12-21 06:15:09 UTC; runner
+File: pak_0.2.0.9000_R-3-5_x86_64-darwin15.6.0.tgz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:ee72340b20c7b7a35372e4d5bae6da5ddde35e4cb432fcad691fbacfd573c9d6
+Path: ../../../../../../../../darwin15.6.0/x86_64
+
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 3.6), R (<= 3.6.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: e61fc9ddc7db8f153315cc1e8ff2171c
+Sha256: 6275aa5f6f039ea916363deb6cbc60e3b574b30bdb9ee1d2aaa2f54450d2ddb9
+NeedsCompilation: no
+Built: R 3.6.3; x86_64-apple-darwin15.6.0; 2021-12-21 06:02:56 UTC; unix
+Packaged: 2021-12-21 06:02:55 UTC; runner
+File: pak_0.2.0.9000_R-3-6_x86_64-darwin15.6.0.tgz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:6275aa5f6f039ea916363deb6cbc60e3b574b30bdb9ee1d2aaa2f54450d2ddb9
+Path: ../../../../../../../../darwin15.6.0/x86_64

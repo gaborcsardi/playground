@@ -1,0 +1,27 @@
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 4.1), R (<= 4.1.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: fc9d18f9b9b19fa8520f3e648fa3e858
+Sha256: 2d8f724066316022104ea4f14b9da6344e5965b6a4602bd56de8a21214a23790
+NeedsCompilation: no
+Built: R 4.1.2; aarch64-apple-darwin20; 2021-12-17 10:41:23 UTC; unix
+Packaged: 2021-12-17 10:41:22 UTC; administrator
+File: pak_0.2.0.9000_R-4-1_aarch64-darwin20.tgz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:2d8f724066316022104ea4f14b9da6344e5965b6a4602bd56de8a21214a23790
+Path: ../../../../../../../../darwin20/aarch64
+
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 4.2), R (<= 4.2.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: 6765585b548c278baa5aeb3a33aa087e
+Sha256: a206d5a490b3285bec4bbb4c927a8771fab83573e09967d750140cd5d5f5e624
+NeedsCompilation: no
+Built: R 4.2.0; aarch64-apple-darwin20; 2021-12-17 10:49:38 UTC; unix
+Packaged: 2021-12-17 10:49:38 UTC; administrator
+File: pak_0.2.0.9000_R-4-2_aarch64-darwin20.tgz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:a206d5a490b3285bec4bbb4c927a8771fab83573e09967d750140cd5d5f5e624
+Path: ../../../../../../../../darwin20/aarch64

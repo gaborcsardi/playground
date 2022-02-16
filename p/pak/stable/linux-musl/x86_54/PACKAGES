@@ -1,0 +1,83 @@
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 3.4), R (<= 3.4.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: 88c966dd4c53ea80ed0e744f51a1e81b
+Sha256: 5d7a4976d67f8d2f22f9b54f9b7139fbe1c2356f6450da20d85a3e8c0ef00eb2
+NeedsCompilation: no
+Built: R 3.4.4; x86_64-pc-linux-gnu; 2022-01-27 09:31:44 UTC; unix
+Packaged: 2022-01-27 09:31:43 UTC; root
+File: pak_0.2.0.9000_R-3-4_x86_64-linux.tar.gz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:5d7a4976d67f8d2f22f9b54f9b7139fbe1c2356f6450da20d85a3e8c0ef00eb2
+Path: ../../linux/x86_64
+
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 3.5), R (<= 3.5.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: 6bb19b3ba0b583328705e52f380b0a0d
+Sha256: a467d3e8fa45eb99bb0b85ae3641c43aed0b70d8f5a635cf67acede06425e8c9
+NeedsCompilation: no
+Built: R 3.5.3; x86_64-pc-linux-gnu; 2022-01-27 09:34:28 UTC; unix
+Packaged: 2022-01-27 09:34:27 UTC; root
+File: pak_0.2.0.9000_R-3-5_x86_64-linux.tar.gz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:a467d3e8fa45eb99bb0b85ae3641c43aed0b70d8f5a635cf67acede06425e8c9
+Path: ../../linux/x86_64
+
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 3.6), R (<= 3.6.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: fe0c25d3113e51629af5d17a4a6a3d24
+Sha256: 359dcb7578586ef93a2f063fbb02f677a35dee06306b4786aa21d7fded9c43f5
+NeedsCompilation: no
+Built: R 3.6.3; x86_64-pc-linux-musl; 2022-01-27 09:34:15 UTC; unix
+Packaged: 2022-01-27 09:34:14 UTC; root
+File: pak_0.2.0.9000_R-3-6_x86_64-linux.tar.gz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:359dcb7578586ef93a2f063fbb02f677a35dee06306b4786aa21d7fded9c43f5
+Path: ../../linux/x86_64
+
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 4.0), R (<= 4.0.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: 8957db29fc5e5541443115a685c4c206
+Sha256: 184f4e75fcbe62d009eb0abbd1e58d07272584a0a9e26491b853b5838a8d401c
+NeedsCompilation: no
+Built: R 4.0.5; x86_64-pc-linux-musl; 2022-01-27 09:32:20 UTC; unix
+Packaged: 2022-01-27 09:32:20 UTC; root
+File: pak_0.2.0.9000_R-4-0_x86_64-linux.tar.gz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:184f4e75fcbe62d009eb0abbd1e58d07272584a0a9e26491b853b5838a8d401c
+Path: ../../linux/x86_64
+
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 4.1), R (<= 4.1.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: 25a0339448b8d020e403037d3d639933
+Sha256: 4e4513a57723e99417eff61396a447a7b5d7024777dada1e00a013f8f6a9c85b
+NeedsCompilation: no
+Built: R 4.1.2; x86_64-pc-linux-musl; 2022-01-27 09:16:13 UTC; unix
+Packaged: 2022-01-27 09:16:12 UTC; root
+File: pak_0.2.0.9000_R-4-1_x86_64-linux.tar.gz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:4e4513a57723e99417eff61396a447a7b5d7024777dada1e00a013f8f6a9c85b
+Path: ../../linux/x86_64
+
+Package: pak
+Version: 0.2.0.9000
+Depends: R (>= 4.2), R (<= 4.2.99)
+Imports: tools, utils
+License: GPL-3
+MD5sum: 39bc9708a12bccfcb49c01b1dc16d93a
+Sha256: 40b4c1db38839908f00e0a30635a074368ec6b6b3e1df817d31cf781db2d77f5
+NeedsCompilation: no
+Built: R 4.2.0; x86_64-pc-linux-musl; 2022-01-27 09:31:51 UTC; unix
+Packaged: 2022-01-27 09:31:50 UTC; root
+File: pak_0.2.0.9000_R-4-2_x86_64-linux.tar.gz
+DownloadURL: https://ghcr.io/v2/gaborcsardi/playground/pak/blobs/sha256:40b4c1db38839908f00e0a30635a074368ec6b6b3e1df817d31cf781db2d77f5
+Path: ../../linux/x86_64

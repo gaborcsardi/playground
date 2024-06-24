@@ -14,10 +14,13 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          packages: curl
+          packages: pkgcache
+          dependencies: "'hard'"
           
       - name: Test RMV
         run: |
           curl::curl_fetch_disk('https://community.r-multiverse.org/src/contrib/PACKAGES.gz', tmp <- tempfile())
           read.dcf(tmp)
+          options(repos = c(RMV="https://community.r-multiverse.org",CRAN="https://cloud.r-project.org"))
+          pkgcache::meta_cache_list()
         shell: Rscript {0}

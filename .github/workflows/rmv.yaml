@@ -26,3 +26,13 @@ jobs:
           pkgcache::meta_cache_list("nanonext")
           pak::meta_list("nanonext")
         shell: Rscript {0}
+
+      - name: Add r-universe to repos
+        run: |
+          cat("\noptions(repos=c(RMV='https://community.r-multiverse.org',CRAN ='https://cloud.r-project.org'))\n", file = "~/.Rprofile", append = TRUE)
+        shell: Rscript {0}
+
+      - name: Test RMV
+        run: |
+          pak::meta_list("nanonext")
+        shell: Rscript {0}

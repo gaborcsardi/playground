@@ -1,8 +1,6 @@
 on:
   workflow_dispatch:
 
-name: RMV
-
 jobs:
   R-CMD-check:
     runs-on: ubuntu-latest

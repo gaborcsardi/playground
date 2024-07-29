@@ -1,0 +1,17 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker/setup-qemu-action@v3
+      - run: |
+          docker pull --platform linux/arm64 rhub/r-minimal
+          docker run -d --name minimal rhub/r-minimal bash -c 'while true; do sleep 10000; done'
+
+      - run: |
+          docker ps
+
+      - run: |
+          docker exec minimal ps

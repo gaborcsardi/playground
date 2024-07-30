@@ -26,6 +26,8 @@ jobs:
           docker exec -i minimal < $1 R --no-save -q
           END
           chmod 775 /usr/local/bin/Rscript
+          ls -l /usr/local/bin/Rscript
+          cat /usr/local/bin/Rscript
       - run: |
           getRversion()
           R.version

@@ -83,5 +83,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ format('{0}-{1}-r{2}-{3}-results', runner.os, runner.arch) }}
+          name: ${{ format('{0}-{1}-results', runner.os, runner.arch) }}
           path: check

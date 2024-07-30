@@ -47,6 +47,7 @@ jobs:
           #! /bin/bash
           env_file=$(basename `mktemp`)
           out_file=$(basename `mktemp`)
+          docker exec s390x touch "/tmp/${env_file}" "/tmp/${out_file}"
           docker exec -i -w /root -e"R_LIB_FOR_PAK=/usr/lib/R/library" \
             -e"GITHUB_ENV=/tmp/${env_file}" \
             -e"GITHUB_OUTPUT=/tmp/${out_file}" \

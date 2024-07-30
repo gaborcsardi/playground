@@ -58,7 +58,9 @@ jobs:
           touch /tmp/${env_file} /tmp/${out_file}
           cat /tmp/${env_file} >> $GITHUB_ENV
           cat /tmp/${out_file} >> $GITHUB_OUTPUT
-          echo Exit status: $status
+          if [[ "$status" != "0" ]]; then
+            echo "::error ::Command failed in container, status: $status"
+          fi
           exit $status
           '
           chmod 775 /usr/local/bin/Rscript2

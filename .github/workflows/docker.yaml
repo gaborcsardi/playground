@@ -52,3 +52,7 @@ jobs:
           R.version[["platform"]]
           dir()
         shell: Rscript {0}
+
+      - uses: r-lib/actions/setup-r-dependencies@feature/container
+        with:
+          pak-version: none

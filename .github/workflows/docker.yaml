@@ -42,7 +42,7 @@ jobs:
             strncat(cmd, argv[1], sizeof(cmd)-1);
             int ret = system(cmd);
             printf("Exit status: %d\n", ret);
-            return ret;
+            return ret == 0 ? 0 : 2;
           }
           '
           gcc -o /usr/local/bin/Rscript /usr/local/bin/Rscript.c

@@ -43,7 +43,8 @@ jobs:
           gcc -o /usr/local/bin/Rscript /usr/local/bin/Rscript.c
           echo > /usr/local/bin/Rscript2 '
           #! /bin/bash
-          docker exec -i -w /root s390x < $1 R --no-save -q
+          docker exec -i -w /root -e"R_LIB_FOR_PAK=/usr/lib/R/library" s390x < $1 \
+            R --no-save -q
           '
           chmod 775 /usr/local/bin/Rscript2
       - name: Test R in container

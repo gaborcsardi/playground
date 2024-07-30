@@ -20,6 +20,7 @@ jobs:
             bash -c 'while true; do sleep 10000; done'
       - run: |
           echo <<END > /usr/local/bin/Rscript
+          #! /bin/bash
           docker exec -i minimal < $1 bash -
           END
           chmod 775 /usr/local/bin/Rscript

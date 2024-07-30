@@ -31,7 +31,8 @@ jobs:
           ls -l /usr/local/bin/Rscript
           cat /usr/local/bin/Rscript
       - run: |
-          Rscript 'getRversion()'
+          echo 'getRversion()' > /tmp/foo
+          Rscript /tmp/foo
       - run: |
           getRversion()
           R.version

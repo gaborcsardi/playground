@@ -45,9 +45,18 @@ jobs:
           gcc -o /usr/local/bin/Rscript /usr/local/bin/Rscript.c
           echo > /usr/local/bin/Rscript2 '
           #! /bin/bash
-          set -e
-          docker exec -i -w /root -e"R_LIB_FOR_PAK=/usr/lib/R/library" s390x < $1 \
-            R --no-save -q
+          env_file=$(basename `mktemp`)
+          out_file=$(basename `mktemp`)
+          docker exec -i -w /root -e"R_LIB_FOR_PAK=/usr/lib/R/library" \
+            -e"GITHUB_ENV=/tmp/${env_file}" \
+            -e"GITHUB_OUTPUT=/tmp/${out_file}" \
+            s390x < $1 R --no-save -q
+          status=$?
+          docker cp s390x:/tmp/${env_file} /tmp/${env_file}
+          docker cp s390x:/tmp/${out_file} /tmp/${out_file}
+          cat /tmp/${env_file} >> $GITHUB_ENV
+          cat /tmp/${out_file} >> $GITHUB_OUT
+          return $status
           '
           chmod 775 /usr/local/bin/Rscript2
       - name: Test R in container

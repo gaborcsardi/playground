@@ -41,7 +41,6 @@ jobs:
             strncat(cmd, "Rscript2 ", sizeof(cmd)-1);
             strncat(cmd, argv[1], sizeof(cmd)-1);
             int ret = system(cmd);
-            printf("Exit status: %d\n", ret);
             return ret == 0 ? 0 : 2;
           }
           '
@@ -62,7 +61,7 @@ jobs:
           cat /tmp/${env_file} >> $GITHUB_ENV
           cat /tmp/${out_file} >> $GITHUB_OUTPUT
           if [ "$status" != "0" ]; then
-            echo "::error ::Command failed in container, status: $status"
+            echo "::error ::Command failed in container."
           fi
           exit $status
           '
@@ -84,8 +83,8 @@ jobs:
       - uses: r-lib/actions/check-r-package@v2
         with:
           build_args: 'c("--no-manual","--compact-vignettes=gs+qpdf")'
-          upload-results: false
-          upload-snapshots: false
+          upload-results: never
+          upload-snapshots: never
 
       - uses: actions/upload-artifact@v4
         with:

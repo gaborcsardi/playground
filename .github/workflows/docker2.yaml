@@ -12,7 +12,7 @@ jobs:
         with:
           image: ghcr.io/r-hub/containers/s390x
           platform: linux/s390x
-          name: s390x
+          ctr-name: s390x
 
       - name: Test R in container
         run: |

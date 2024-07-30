@@ -1,6 +1,8 @@
 on:
   workflow_dispatch:
 
+name: rmv.yaml
+    
 jobs:
   R-CMD-check:
     runs-on: ubuntu-latest

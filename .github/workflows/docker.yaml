@@ -1,6 +1,8 @@
 on:
   workflow_dispatch:
 
+name: docker.yaml
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -28,6 +30,8 @@ jobs:
           chmod 775 /usr/local/bin/Rscript
           ls -l /usr/local/bin/Rscript
           cat /usr/local/bin/Rscript
+      - run: |
+          Rscript 'getRversion()'
       - run: |
           getRversion()
           R.version

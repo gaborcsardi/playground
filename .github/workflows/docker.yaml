@@ -19,15 +19,15 @@ jobs:
           docker run -d --name s390x -v`pwd`:/root ghcr.io/r-hub/containers/s390x \
             bash -c 'while true; do sleep 10000; done'
       - run: |
+          docker exec s390x ps
+      - run: |
           echo <<END > /usr/local/bin/Rscript
           #! /bin/bash
-          docker exec -i minimal < $1 bash -
+          docker exec -i minimal < $1 R --no-save -q
           END
           chmod 775 /usr/local/bin/Rscript
       - run: |
           getRversion()
           R.version
+          getwd()
         shell: Rscript {0}
-
-      - run: |
-          docker exec s390x ps

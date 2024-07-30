@@ -66,12 +66,6 @@ jobs:
           dir()
         shell: Rscript {0}
 
-      - name: Try manual sessioninfo install
-        run: |
-          pak::pkg_install("cli")
-          install.packages("sessioninfo", repos = "https://cloud.r-project.org")
-        shell: Rscript {0}
-
       - uses: r-lib/actions/setup-r-dependencies@feature/container
         with:
           pak-version: none

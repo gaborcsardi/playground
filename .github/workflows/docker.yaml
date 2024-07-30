@@ -77,11 +77,11 @@ jobs:
 
       - uses: r-lib/actions/check-r-package@v2
         with:
-          upload-snapshots: true
           build_args: 'c("--no-manual","--compact-vignettes=gs+qpdf")'
+          upload-results: false
+          upload-snapshots: false
 
-      - name: what's up
-        if: always()
-        run: |
-          ls -l check
-          ls -ld check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ format('{0}-{1}-r{2}-{3}-results', runner.os, runner.arch) }}
+          path: check

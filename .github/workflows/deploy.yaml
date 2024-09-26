@@ -1,0 +1,29 @@
+name: deploy.yaml
+on:
+  workflow_dispatch:
+
+permissions: read-all
+
+jobs:
+  cran-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    container:
+      image: ghcr.io/r-hub/cran-metadata:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - name: Checkout gh-pages
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        path: www
+    - name: tests
+      run: |
+        mount
+        df -h
+        pwd
+        set
+        echo $HOME

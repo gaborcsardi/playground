@@ -22,7 +22,7 @@ jobs:
           docker exec s390x ps
       - run: |
           echo > /usr/local/bin/Rscript '
-          #! /bin/bash
+          #!/usr/bin/env sh
           docker exec -i minimal < $1 R --no-save -q
           '
           chmod 775 /usr/local/bin/Rscript

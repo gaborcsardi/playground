@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Install rig
         run: |
-          winget install posit.rig
+          choco install rig
       - name: Install R versions
         run: |
           rig add 4.4.0

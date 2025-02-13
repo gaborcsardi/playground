@@ -19,5 +19,4 @@ jobs:
       - name: Download DESCRIPTION
         run: |
           curl https://raw.githubusercontent.com/posit-dev/qa-example-content/main/DESCRIPTION --output DESCRIPTION
-      - uses: r-lib/actions/setup-r-dependencies@V2
-
+      - uses: r-lib/actions/setup-r-dependencies@v2

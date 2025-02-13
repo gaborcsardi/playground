@@ -1,0 +1,23 @@
+name: rig.yaml
+
+on:
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - name: Install rig
+        run: |
+          winget install posit.rig
+      - name: Install R versions
+        run: |
+          rig add 4.4.0
+          rig add 4.4.2
+          rig default 4.4.0
+          rig ls
+      - name: Download DESCRIPTION
+        run: |
+          curl https://raw.githubusercontent.com/posit-dev/qa-example-content/main/DESCRIPTION --output DESCRIPTION
+      - uses: r-lib/actions/setup-r-dependencies@V2
+
